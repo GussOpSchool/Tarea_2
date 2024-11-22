@@ -1,0 +1,64 @@
+\documentclass [12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\pagestyle{myheadings} 
+\markright{Aplicaciones Ofimáticas Tarea 2}
+
+\title{Aplicaciones Ofimáticas Tarea 2}
+\author{Gustavo Tecchio}
+\date{22 de Noviembre, 2024}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Manual de como beber água}
+
+\begin{center}
+La funci\'on m\'as vital para el ser humano es hidratarse y es para esto que existe este manual. Es como un antiguo fil\'osofo dijo: "Água es vida" (un antiguo fil\'osofo)
+\end{center}
+El paso a paso para hacerlo se encuentra abajo:
+\begin{itemize}
+\item Primero necesitas cualquier recipiente que no tenga agujeros
+\item Encuentra una fuente de água limpia o compra una botella en eroski xd (referencia: qué es una botella? \ref{tab:botella})
+\item Abre la boca e inclina el recipiente suavemente hacia ella para que no te mojes
+\end{itemize}
+
+\newpage
+
+\section{Explicaciones Extra}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{| c | c |}
+\hline
+\textbf{Donde Comprar} & \textbf{Item} \\ \hline
+Chino & Recipiente \\ \hline
+Eroski & Água \\ \hline
+Eroski & Botella \\ \hline
+\end{tabular}
+\caption{Lista de Compras}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{| r | l | c |}
+\hline
+\textbf{Recipiente} & \textbf{Donde Comprar} & \textbf{Qué es} \\ \hline
+Botella & Chino & Es un recipiente cilíndrico \\
+Plato & Chino & Es un recipiente plano (no es muy bueno la verdad) \\
+Taza & Mercadona & Es parecido con la botella pero más pequeño \\ \hline
+\end{tabular}
+\caption{Lista de Compras}
+\label{tab:botella}
+\end{table}
+\end{document}

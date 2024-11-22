@@ -1,0 +1,12 @@
+function enviar(){
+  var activar = DocumentApp.getActiveDocument();
+  var archivo = activar.getAs('application/pdf').getBytes();
+  var NombreArchivo   = "gustavo_checklist.pdf";
+  var Asunto    = "Checklist";
+  var Mensaje    = "Por lo de la tarea 2 de AO, aquí tienes un checklist porque sí";
+  var myFiles= {fileName:NombreArchivo, content:archivo, mimeType:"application/pdf"};
+  var saltolinea = "\n";
+  var saludo = "Hola a todos," + saltolinea + Mensaje; 
+  var mailcompleto = saludo + saltolinea + "Solo por avisar, si haces clic, te lo salva en google docs." + saltolinea + "Gracias";
+  MailApp.sendEmail("alumnatsmxa@iesjoanramis.org","Trabajo de AO (puedes ignorarlo): "+ Asunto, mailcompleto, {attachments: [myFiles]});
+}
